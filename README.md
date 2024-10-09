@@ -1,2 +1,2 @@
-# BogoSortkSum
-kSum where k is an integer and bogosort is used to find the k amount of numbers to add up to the target.
+# AlgoSortKsum
+Algorithm Sort - Choose an algorithm to sort the kSum where k is an integer with ranges and target the user chooses.
