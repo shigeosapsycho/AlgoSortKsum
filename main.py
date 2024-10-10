@@ -5,6 +5,7 @@ from matplotlib.animation import FuncAnimation
 import time
 import itertools
 from math import comb
+from algorithms import Algorithms
 
 class main:
     def __init__(self):
@@ -19,6 +20,7 @@ class main:
         self.successful_combinations_count = 0
         self.expected_tries = 0
         self.rarity_percentage = 0
+        # self.sorting_algorithm = 0
 
     def kSum(self, nums: List[int], target: int, k: int):
         self.nums = nums
@@ -31,7 +33,7 @@ class main:
         print(f"Rarity percentage: {self.rarity_percentage:.6f}%")
         ani = FuncAnimation(self.fig, self.update, frames=range(1000), repeat=False)
         plt.show()
-
+    
     def update(self, frame):
         self.ax.clear()
         self.indices = random.sample(range(len(self.nums)), self.k)
@@ -92,6 +94,7 @@ range1 = bogo.get_integer_input("What would you like the first range to be? \n")
 range2 = bogo.get_integer_input("What would you like the second range to be? \n") + 1
 target = bogo.get_integer_input("What is your target sum? \n") 
 k = bogo.get_integer_input("How many numbers would you like to sum (e.g., 2 for two-sum)? \n")
+# sorting_aglorithm = ("What sorting algorithm would you like to use? \n")
 
 nums = list(range(range1, range2))
 random.shuffle(nums)
